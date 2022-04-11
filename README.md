@@ -9,7 +9,7 @@ Build the debugger docker image:
     docker build -t debugger:v1.0.0 -f Dockerfile .
 
 
-To add a container of debugger to your pods as a sidecar, add the following to your deployment:
+To add a container of debugger to your pods as a sidecar, add the following to your deployment spec, or refer [deployment.yaml](./deployment.yaml):
 
     - name: debugger
       image: debugger:v1.0.0
