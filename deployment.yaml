@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: debugger
+  labels:
+    app: debugger
+  annotations:
+    maintainer: github.com/shivanshthapliyal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: debugger
+  template:
+    metadata:
+      labels:
+        app: debugger
+    spec:
+      containers:
+      - name: debugger
+        image: debugger
+        args:
+          - /bin/bash
+          - '-c'
+          - sleep 6000
+---
