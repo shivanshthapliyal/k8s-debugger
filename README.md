@@ -1,5 +1,5 @@
 # k8s-debugger
-Extrememely Small | Containerised kubectl, bash, curl, jq, screen, vim, db-clients &amp; monitoring on alpine.
+**Extrememely Small** | Containerised kubectl, bash, curl, jq, screen, vim, db-clients &amp; monitoring on alpine.
 
 Build the debugger docker image:
 
